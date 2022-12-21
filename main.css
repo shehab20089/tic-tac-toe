@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap");
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s all;
+}
+body {
+  background-color: #fcffe7;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  color: #2b3467;
+}
+
+.page2,
+.page3 {
+  display: none;
+}
+.page1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.player-card {
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.action-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+button {
+  margin-block-start: 1rem;
+  background-color: #eb455f;
+  color: #fcffe7;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: none;
+}
+
+button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* page 2 styles */
+.page2 {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.game-board {
+  width: 500px;
+  height: 500px;
+  border: 5px solid #eb455f;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.cell {
+  border: 3px solid #2b3467;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cell:hover {
+  cursor: pointer;
+  background-color: #2b34672a;
+}
+
+.page3 {
+  font-size: 5rem;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

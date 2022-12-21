@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic a toe</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+  </head>
+  <body>
+      <div class="page1">
+        <div class="player-card">
+          <h2>Player 1 (X) </h2>
+          <label for="player1Name">Player Name</label>
+          <input
+            type="text"
+            placeholder="Player Name"
+            id="player1Name"
+            value="Player1"
+          />
+        </div>
+        <div class="action-container">
+          <p>VS</p>
+          <button>Start Now</button>
+        </div>
+        <div class="player-card">
+          <h2>Player 2 (O)</h2>
+          <label for="player2Name">Player Name</label>
+          <input
+            type="text"
+            placeholder="Player Name"
+            id="player2Name"
+            value="Player2"
+          />
+        </div>
+      </div>
+      <div class="page2">
+        <div class="playerData" data-player="one"></div>
+        <div class="game-board">
+          <div class="cell" data-index="1"></div>
+          <div class="cell" data-index="2"></div>
+          <div class="cell" data-index="3"></div>
+          <div class="cell" data-index="4"></div>
+          <div class="cell" data-index="5"></div>
+          <div class="cell" data-index="6"></div>
+          <div class="cell" data-index="7"></div>
+          <div class="cell" data-index="8"></div>
+          <div class="cell" data-index="9"></div>
+        </div>
+        <div class="playerData" data-player="two"></div>
+      </div>
+      <div class="page3">
+        <div class="win-message"></div>
+        <button class="button-restart">Play again</button>
+      </div>
+    </div>
+  </body>
+</html>
